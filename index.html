@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>To Do List</title>
+		<link rel="stylesheet" href="dist/css/style.min.css" />
+		<script type="module" src="js/main.js"></script>
+	</head>
+	<body>
+		<main>
+			<!-- form input todo list -->
+			<section class="newItemEntry">
+				<form id="itemEntryForm" action="">
+					<label for="newItem">Enter a new to do item</label>
+					<input
+						id="newItem"
+						type="text"
+						placeholder="Add item"
+						size="40"
+						autocomplete="off"
+						tabindex="0"
+					/>
+					<button
+						id="addItem"
+						class="btn"
+						title="add new item"
+						aria-label="Add new item to list"
+						tabindex="0"
+					>
+						+
+					</button>
+				</form>
+			</section>
+			<!-- form input todo list -->
+			<!--  todo list -->
+			<section class="listContainer">
+				<div class="listTitle">
+					<h1 tabindex="0">To Do List</h1>
+					<button
+						id="clearItems"
+						class="btn"
+						title="clear the list"
+						aria-label="Remove all item from the list"
+						tabindex="0"
+					>
+						Clear
+					</button>
+				</div>
+				<hr />
+				<div id="listItems">
+					<div class="item">
+						<input type="checkbox" id="1" tabindex="0" />
+						<label for="1">eat</label>
+					</div>
+					<div class="item">
+						<input type="checkbox" id="2" tabindex="0" />
+						<label for="2">sleep</label>
+					</div>
+					<div class="item">
+						<input type="checkbox" id="3" tabindex="0" />
+						<label for="3">code</label>
+					</div>
+				</div>
+				<p id="confirmation" class="confirmation" aria-live="assertive"></p>
+			</section>
+			<!--  todo list -->
+		</main>
+	</body>
+</html>

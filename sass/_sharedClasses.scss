@@ -1,0 +1,19 @@
+.btn {
+	width: 15%;
+	min-width: 40px;
+	min-height: 40px;
+	color: $button-text-color;
+	border: 2px solid $text-box-border-color;
+	border-radius: 0.75rem;
+	outline: none;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+	filter: brightness(120%);
+	box-shadow: 0 3px 3px #000;
+}

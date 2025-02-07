@@ -1,0 +1,45 @@
+$default-font-color: #242424;
+$background-color: #242424;
+$container-bgcolor: whitesmoke;
+$container-border-color: whitesmoke;
+$text-box-border-color: #242424;
+$button-text-color: whitesmoke;
+$add-button-color: limegreen;
+$clear-button-color: #b82132;
+@mixin mq($size) {
+	@media only screen and (min-width: $size) {
+		@content;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: $default-font-color;
+	background-color: $background-color;
+	min-height: 100vh;
+	@include mq(768px) {
+		font-size: 22px;
+	}
+}
+
+body {
+	padding: 1rem;
+	background-color: $background-color;
+}
+
+section {
+	background-color: $container-bgcolor;
+	width: 90%;
+	max-width: 700px;
+	margin: auto;
+	border: 1px solid $container-border-color;
+	border-radius: 0.75rem;
+}
